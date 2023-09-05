@@ -1,0 +1,27 @@
+<section>
+  <div class="d-flex justify-content-between">
+    <h4>Clientes</h4>
+    <a href="#" routerLink="/create" class="btn btn-success mb-5">Crear Cliente</a>
+  </div>
+
+  <table class="table">
+    <tr>
+      <th width="200px">Id</th>
+      <th>Nombre</th>
+      <th width="100px">Ciudad</th>
+      <th>Direccion</th>
+      <th width="150px">Telefono</th>
+      <th width="150px">Fecha</th>
+      <th>Estado</th>
+    </tr>
+    <tr *ngFor="let cliente of clientes">
+      <th>{{ cliente.idcliente }}</th>
+      <th>{{ cliente.nombre }}</th>
+      <th>{{ cliente.idciudad }}</th>
+      <th>{{ cliente.direccion }}</th>
+      <th>{{ cliente.telefono }}</th>
+      <th>{{ cliente.creado }}</th>
+      <th>{{ cliente.estado }}</th>
+    </tr>
+  </table>
+</section>
